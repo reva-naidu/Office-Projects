@@ -9,13 +9,13 @@
 	--primary-text: #222;
 	--muted-text: #B1B0B5;
 	--logo-fill: var(--primary-text);
-	--input-bg: #F5F5F6;
-	--input-bg-hover: #ecebed;
+	/*--input-bg: white;
+	--input-bg-hover: white;
 	--input-border-focus: var(--muted-text);
 	--input-text: var(--primary-text);
 	--input-placeholder: var(--muted-text);
 	--button-text: #000;
-	--button-text-hover: #faf4ef;
+	--button-text-hover: #faf4ef;*/
 	--icon-socials: var(--primary-text);
 	--icon-socials-hover: #000;
 	--default-border-radius: 8px;
@@ -34,8 +34,8 @@ html {
 body {
 	font-family: 'Inter', sans-serif;
 	line-height: 1.5;
-	color: var(--primary-text);
-	background-color: var(--page-bg);
+	color: black;
+	background-color: white;
 	transition: var(--default-transition);
 	margin: 0%;
 	padding: 0%;
@@ -151,13 +151,12 @@ img {
 	background-color: white;
 	color: black;
 	cursor: pointer;
-	font-size: 40px;
-	line-height: 46px; 
+	font-size: 36px;
+	line-height: 40px; 
 	width: 100%;
 	padding: 0px 15px 0px 15px;
 	border: 1.5px solid black;
 	outline:#000000;
-	transition: 0.4s;
 	box-shadow: none;
 	text-align: left;
 	display: flex;
@@ -166,23 +165,256 @@ img {
 	font-weight: bold;
 	font-family: Caveat, sans-serif;
   }
-
+  .accordion-1{
+	background-color: white;
+	color: black;
+	cursor: pointer;
+	font-size: 36px;
+	line-height: 40px; 
+	width: 100%;
+	padding: 0px 15px 0px 15px;
+	border: 1.5px solid black;
+	outline:#000000;
+	box-shadow: none;
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+	font-family: Caveat, sans-serif;
+  }
+  .accordion-2{
+	background-color: white;
+	color: black;
+	cursor: pointer;
+	font-size: 36px;
+	line-height: 40px; 
+	width: 100%;
+	padding: 0px 15px 0px 15px;
+	border: 1.5px solid black;
+	outline:#000000;
+	box-shadow: none;
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+	font-family: Caveat, sans-serif;
+  } 
+  .accordion-3{
+	background-color: white;
+	color: black;
+	cursor: pointer;
+	font-size: 36px;
+	line-height: 40px; 
+	width: 100%;
+	padding: 0px 15px 0px 15px;
+	border: 1.5px solid black;
+	outline:#000000;
+	box-shadow: none;
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+	font-family: Caveat, sans-serif;
+  } 
+  .accordion-4{
+	background-color: white;
+	color: black;
+	cursor: pointer;
+	font-size: 36px;
+	line-height: 40px; 
+	width: 100%;
+	padding: 0px 15px 0px 15px;
+	border: 1.5px solid black;
+	outline:#000000;
+	box-shadow: none;
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+	font-family: Caveat, sans-serif;
+  }
+  .accordion-5{
+	background-color: white;
+	color: black;
+	cursor: pointer;
+	font-size: 36px;
+	line-height: 40px; 
+	width: 100%;
+	padding: 0px 15px 0px 15px;
+	border: 1.5px solid black;
+	outline:#000000;
+	box-shadow: none;
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+	font-family: Caveat, sans-serif;
+  }  
+  
+  
   .accordion p{
 	font-family: Caveat, sans-serif;
 	font-size: 60px;
-	line-height: 65px;
+	line-height: 45px;
+	align-items: center;
+  }
+  .accordion-1 p{
+	font-family: Caveat, sans-serif;
+	font-size: 60px;
+	line-height: 45px;
+	align-items: center;
+  }
+  .accordion-2 p{
+	font-family: Caveat, sans-serif;
+	font-size: 60px;
+	line-height: 45px;
+	align-items: center;
+  }
+  .accordion-3 p{
+	font-family: Caveat, sans-serif;
+	font-size: 60px;
+	line-height: 45px;
+	align-items: center;
+  }
+  .accordion-4 p{
+	font-family: Caveat, sans-serif;
+	font-size: 60px;
+	line-height: 45px;
+	align-items: center;
+  }
+  .accordion-5 p{
+	font-family: Caveat, sans-serif;
+	font-size: 60px;
+	line-height: 45px;
+	align-items: center;
   }
 
+  .accordion:hover{
+	background-color: white;
+	border-bottom: 1px solid white;
+	cursor: pointer;
+	justify-content: space-between;
+	align-items: center;
+	text-align: left;
+	box-shadow: none;
+	border-top: 1.5px solid black;
+	border-left: 1.5px solid black;
+	border-right: 1.5px solid black;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 40px;
+	margin: 0px;
+	padding: 0px 10px 0px 10px;
+  }
+  .accordion-1:hover{
+	background-color: white;
+	border-bottom: 1px solid white;
+	cursor: pointer;
+	justify-content: space-between;
+	align-items: center;
+	text-align: left;
+	box-shadow: none;
+	border-top: 1.5px solid black;
+	border-left: 1.5px solid black;
+	border-right: 1.5px solid black;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 40px;
+	margin: 0px;
+	padding: 0px 10px 0px 10px;
+  }  
+  .accordion-2:hover{
+	background-color: white;
+	border-bottom: 1px solid white;
+	cursor: pointer;
+	justify-content: space-between;
+	align-items: center;
+	text-align: left;
+	box-shadow: none;
+	border-top: 1.5px solid black;
+	border-left: 1.5px solid black;
+	border-right: 1.5px solid black;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 40px;
+	margin: 0px;
+	padding: 0px 10px 0px 10px;
+  }  
+  .accordion-3:hover{
+	background-color: white;
+	border-bottom: 1px solid white;
+	cursor: pointer;
+	justify-content: space-between;
+	align-items: center;
+	text-align: left;
+	box-shadow: none;
+	border-top: 1.5px solid black;
+	border-left: 1.5px solid black;
+	border-right: 1.5px solid black;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 40px;
+	margin: 0px;
+	padding: 0px 10px 0px 10px;
+  }  
+  .accordion-4:hover{
+	background-color: white;
+	border-bottom: 1px solid white;
+	cursor: pointer;
+	justify-content: space-between;
+	align-items: center;
+	text-align: left;
+	box-shadow: none;
+	border-top: 1.5px solid black;
+	border-left: 1.5px solid black;
+	border-right: 1.5px solid black;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 40px;
+	margin: 0px;
+	padding: 0px 10px 0px 10px;
+  }  
+  .accordion-5:hover{
+	background-color: white;
+	border-bottom: 1px solid white;
+	cursor: pointer;
+	justify-content: space-between;
+	align-items: center;
+	text-align: left;
+	box-shadow: none;
+	border-top: 1.5px solid black;
+	border-left: 1.5px solid black;
+	border-right: 1.5px solid black;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 40px;
+	margin: 0px;
+	padding: 0px 10px 0px 10px;
+  }    
   .active, .accordion:hover{
 	background-color: white;
-	border-bottom: 0px;
+	border-bottom: 1px solid white;
+	box-shadow: none;
+	border-top: 1.5px solid black;
+	border-left: 1.5px solid black;
+	border-right: 1.5px solid black;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 40px;
+	margin: 0px;
+	padding: 0px;
   }
  
   .pannel{
 	padding: 0rem 0.5rem 1rem 0.5rem;
-	background-color: white;
+	background-color: white!important;
 	overflow: hidden;
-	background-color: white;
+	color: black!important;
 	display: none;
 	border-top: 0px solid black;
 	border-bottom: 1.5px solid black;
@@ -192,9 +424,9 @@ img {
  
   .pannel p{
 	color: black;
+	background-color: white;
 	font-size: 18px;
 	line-height: 1.4;
-
   }
 
   .faq{
@@ -206,6 +438,17 @@ img {
 	border: none;
   }
 
+  .image-hover{
+	width: 500;
+	background-image: url('images/Satya-image.svg');
+	background-size: cover;
+	transition: background-image 0.5s ease-in-out;
+  }
+
+  .image-hover:hover{
+	background-image: url('images/Satya-image-oranage.svg');
+  }
+
 /* ================================================= */
 
 /* Forms */
@@ -213,27 +456,33 @@ img {
 /* ================================================= */
 
 input {
-	background-color: var(--input-bg);
-	border-radius: var(--default-border-radius);
-	border: none;
-	padding: 1.333rem;
-	outline: none;
-	margin-bottom: 1rem;
+	background-color: transparent;
+	border-bottom: 1.5px solid black !important;
+	border-top: 1.5px solid white;
+	border-left: 1.5px solid white;
+	border-right: 1.5px solid white;
+	padding: 0.5rem;
+	margin-bottom: 0.5rem;
 	width: 100%;
 	line-height: 1.5;
-	border: 1px solid var(--input-bg);
-	color: var(--input-text);
+	color: black;;
 	transition: var(--default-transition);
 }
 input::placeholder {
-	color: var(--input-placeholder);
+	color: black;
 	transition: var(--default-transition);
 }
 input:hover {
 	background-color: var(--input-bg-hover);
 }
 input:focus {
-	border-color: var(--input-border-focus);
+	border-bottom: 1.5px solid black!important;
+	border-top: 1.5px solid white!important;
+	border-left: 1.5px solid white!important;
+	border-right: 1.5px solid white!important;
+}
+label{
+	font-weight: 600;
 }
 button {
 	background-color: white;
@@ -250,7 +499,39 @@ button {
 	font-size: 32px;
 	box-shadow: 5px 5px;
 }
-
+#send
+ {
+	background-color: white;
+	border-radius: 0px;
+	padding: 5px 30px 5px 30px;
+	color: black;
+	border: 1px solid black;
+	line-height: 1.5;
+	font-weight: 700;
+	white-space: nowrap;
+	cursor: pointer;
+	transition: var(--default-transition);
+	font-family: Caveat, sans-serif;
+	font-size: 26px;
+	box-shadow: 5px 5px;
+	float: right;
+}
+#send:hover {
+	background-color: white;
+	border-radius: 0px;
+	padding: 5px 30px 5px 30px;
+	color: #191919;
+	border: 1px solid #DB511F;
+	line-height: 1.5;
+	font-weight: 700;
+	white-space: nowrap;
+	cursor: pointer;
+	transition: var(--default-transition);
+	font-family: Caveat, sans-serif;
+	font-size: 26px;
+	box-shadow: 5px 5px #DB511F;
+	float: right;
+}
 button:hover {
 	background-color: white;
 	border-radius: 0px;
@@ -406,7 +687,21 @@ button:hover {
 	font-size: 32px;
 	box-shadow: 5px 5px #DB511F;
 }
-
+#lets-talk{
+	line-height: 1.5;
+	font-weight: 700;
+	font-family: Caveat, sans-serif;
+	font-size: 55px;
+	color: black;
+	text-decoration: underline;
+}
+#call
+	{
+		font-family: 'Inter', sans-serif;
+	    line-height: 1.5;
+	    color: black;
+		font-size: 32px !important;
+	}
 
 /* ================================================= */
 
@@ -524,6 +819,12 @@ i {
 #notify-form {
 	width: 100%;
 	margin-bottom: 2rem;
+	background-color: white;
+	padding: 20px;
+}
+.form{
+	background-color: white;
+	color: black;
 }
 #footnote {
 	color: var(--muted-text);
@@ -540,21 +841,35 @@ i {
 
 /* ================================================= */
 
+Footer
+{
+	display: flex;
+	justify-content: space-between;
+	background-color: #191919;
+	color: #fff;
+	float: top;
+	padding-top: 30px;
+	padding-right: 100px;
+	padding-left: 100px;
+	padding-bottom: 30px;
+}
+
 #social-icons {
 	list-style: none;
 	display: flex;
 	align-items: center;
+	float: center;
 	gap: 1.333rem;
 	margin: 0;
 	padding: 0;
 }
 #social-icons svg {
-	fill: var(--icon-socials);
-	transition: var(--default-transition);
+	fill: white;
+		transition: var(--default-transition);
 	display: block;
 }
 #social-icons a:hover svg {
-	fill: var(--icon-socials-hover);
+	fill: #EFEFEF;
 }
 /* ================================================= */
 
@@ -670,7 +985,7 @@ body.light-theme {
 	color: black;
 }
 body.dark-theme {
-	background-color: black;
+	background-color: black!important;
 	color: white;
 }
 .theme-toggle img {
@@ -1165,6 +1480,467 @@ button:hover.dark-theme-bg {
 	font-weight: bold;
 	font-family: Caveat, sans-serif;
 }
+.accordion-1.light-theme-bg{
+	background-color: white;
+	color: black;
+	cursor: pointer;
+	font-size: 40px;
+	line-height: 46px; 
+	width: 100%;
+	padding: 0px 15px 0px 15px;
+	border: 1.5px solid black;
+	outline:#000000;
+	transition: 0.4s;
+	box-shadow: none;
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+	font-family: Caveat, sans-serif;
+}
+
+.accordion-1.dark-theme-bg{
+	background-color: #191919;
+	color: white;
+	cursor: pointer;
+	font-size: 40px;
+	line-height: 46px; 
+	width: 100%;
+	padding: 0px 15px 0px 15px;
+	border: 1.5px solid white;
+	outline:white;
+	transition: 0.4s;
+	box-shadow: none;
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+	font-family: Caveat, sans-serif;
+}
+.accordion-2.light-theme-bg{
+	background-color: white;
+	color: black;
+	cursor: pointer;
+	font-size: 40px;
+	line-height: 46px; 
+	width: 100%;
+	padding: 0px 15px 0px 15px;
+	border: 1.5px solid black;
+	outline:#000000;
+	transition: 0.4s;
+	box-shadow: none;
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+	font-family: Caveat, sans-serif;
+}
+
+.accordion-2.dark-theme-bg{
+	background-color: #191919;
+	color: white;
+	cursor: pointer;
+	font-size: 40px;
+	line-height: 46px; 
+	width: 100%;
+	padding: 0px 15px 0px 15px;
+	border: 1.5px solid white;
+	outline:white;
+	transition: 0.4s;
+	box-shadow: none;
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+	font-family: Caveat, sans-serif;
+}
+.accordion-3.light-theme-bg{
+	background-color: white;
+	color: black;
+	cursor: pointer;
+	font-size: 40px;
+	line-height: 46px; 
+	width: 100%;
+	padding: 0px 15px 0px 15px;
+	border: 1.5px solid black;
+	outline:#000000;
+	transition: 0.4s;
+	box-shadow: none;
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+	font-family: Caveat, sans-serif;
+}
+
+.accordion-3.dark-theme-bg{
+	background-color: #191919;
+	color: white;
+	cursor: pointer;
+	font-size: 40px;
+	line-height: 46px; 
+	width: 100%;
+	padding: 0px 15px 0px 15px;
+	border: 1.5px solid white;
+	outline:white;
+	transition: 0.4s;
+	box-shadow: none;
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+	font-family: Caveat, sans-serif;
+}
+.accordion-4.light-theme-bg{
+	background-color: white;
+	color: black;
+	cursor: pointer;
+	font-size: 40px;
+	line-height: 46px; 
+	width: 100%;
+	padding: 0px 15px 0px 15px;
+	border: 1.5px solid black;
+	outline:#000000;
+	transition: 0.4s;
+	box-shadow: none;
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+	font-family: Caveat, sans-serif;
+}
+
+.accordion-4.dark-theme-bg{
+	background-color: #191919;
+	color: white;
+	cursor: pointer;
+	font-size: 40px;
+	line-height: 46px; 
+	width: 100%;
+	padding: 0px 15px 0px 15px;
+	border: 1.5px solid white;
+	outline:white;
+	transition: 0.4s;
+	box-shadow: none;
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+	font-family: Caveat, sans-serif;
+}
+.accordion-5.light-theme-bg{
+	background-color: white;
+	color: black;
+	cursor: pointer;
+	font-size: 40px;
+	line-height: 46px; 
+	width: 100%;
+	padding: 0px 15px 0px 15px;
+	border: 1.5px solid black;
+	outline:#000000;
+	transition: 0.4s;
+	box-shadow: none;
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+	font-family: Caveat, sans-serif;
+}
+
+.accordion-5.dark-theme-bg{
+	background-color: #191919;
+	color: white;
+	cursor: pointer;
+	font-size: 40px;
+	line-height: 46px; 
+	width: 100%;
+	padding: 0px 15px 0px 15px;
+	border: 1.5px solid white;
+	outline:white;
+	transition: 0.4s;
+	box-shadow: none;
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+	font-family: Caveat, sans-serif;
+}
+
+.accordion:hover.light-theme-bg{
+	background-color: white;
+	border-bottom: 1px solid white;
+	cursor: pointer;
+	justify-content: space-between;
+	align-items: center;
+	text-align: left;
+	box-shadow: none;
+	border-top: 1.5px solid black;
+	border-left: 1.5px solid black;
+	border-right: 1.5px solid black;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 40px;
+	margin: 0px;
+	padding: 0px 10px 0px 10px;
+  }
+
+.accordion:hover.dark-theme-bg{
+	background-color: #191919;
+	border-bottom: 1px solid #191919;
+	cursor: pointer;
+	justify-content: space-between;
+	align-items: center;
+	text-align: left;
+	box-shadow: none;
+	border-top: 1.5px solid white;
+	border-left: 1.5px solid white;
+	border-right: 1.5px solid white;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 40px;
+	margin: 0px;
+	padding: 0px 10px 0px 10px;
+  }
+  .accordion-1:hover.light-theme-bg{
+	background-color: white;
+	border-bottom: 1px solid white;
+	cursor: pointer;
+	justify-content: space-between;
+	align-items: center;
+	text-align: left;
+	box-shadow: none;
+	border-top: 1.5px solid black;
+	border-left: 1.5px solid black;
+	border-right: 1.5px solid black;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 40px;
+	margin: 0px;
+	padding: 0px 10px 0px 10px;
+  }
+
+.accordion-1:hover.dark-theme-bg{
+	background-color: #191919;
+	border-bottom: 1px solid #191919;
+	cursor: pointer;
+	justify-content: space-between;
+	align-items: center;
+	text-align: left;
+	box-shadow: none;
+	border-top: 1.5px solid white;
+	border-left: 1.5px solid white;
+	border-right: 1.5px solid white;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 40px;
+	margin: 0px;
+	padding: 0px 10px 0px 10px;
+  }  
+.accordion-2:hover.light-theme-bg{
+	background-color: white;
+	border-bottom: 1px solid white;
+	cursor: pointer;
+	justify-content: space-between;
+	align-items: center;
+	text-align: left;
+	box-shadow: none;
+	border-top: 1.5px solid black;
+	border-left: 1.5px solid black;
+	border-right: 1.5px solid black;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 40px;
+	margin: 0px;
+	padding: 0px 10px 0px 10px;
+  }
+
+.accordion-2:hover.dark-theme-bg{
+	background-color: #191919;
+	border-bottom: 1px solid #191919;
+	cursor: pointer;
+	justify-content: space-between;
+	align-items: center;
+	text-align: left;
+	box-shadow: none;
+	border-top: 1.5px solid white;
+	border-left: 1.5px solid white;
+	border-right: 1.5px solid white;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 40px;
+	margin: 0px;
+	padding: 0px 10px 0px 10px;
+  } 
+  .accordion-3:hover.light-theme-bg{
+	background-color: white;
+	border-bottom: 1px solid white;
+	cursor: pointer;
+	justify-content: space-between;
+	align-items: center;
+	text-align: left;
+	box-shadow: none;
+	border-top: 1.5px solid black;
+	border-left: 1.5px solid black;
+	border-right: 1.5px solid black;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 40px;
+	margin: 0px;
+	padding: 0px 10px 0px 10px;
+  }
+
+.accordion-3:hover.dark-theme-bg{
+	background-color: #191919;
+	border-bottom: 1px solid #191919;
+	cursor: pointer;
+	justify-content: space-between;
+	align-items: center;
+	text-align: left;
+	box-shadow: none;
+	border-top: 1.5px solid white;
+	border-left: 1.5px solid white;
+	border-right: 1.5px solid white;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 40px;
+	margin: 0px;
+	padding: 0px 10px 0px 10px;
+  } 
+  .accordion-4:hover.light-theme-bg{
+	background-color: white;
+	border-bottom: 1px solid white;
+	cursor: pointer;
+	justify-content: space-between;
+	align-items: center;
+	text-align: left;
+	box-shadow: none;
+	border-top: 1.5px solid black;
+	border-left: 1.5px solid black;
+	border-right: 1.5px solid black;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 40px;
+	margin: 0px;
+	padding: 0px 10px 0px 10px;
+  }
+
+.accordion-4:hover.dark-theme-bg{
+	background-color: #191919;
+	border-bottom: 1px solid #191919;
+	cursor: pointer;
+	justify-content: space-between;
+	align-items: center;
+	text-align: left;
+	box-shadow: none;
+	border-top: 1.5px solid white;
+	border-left: 1.5px solid white;
+	border-right: 1.5px solid white;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 40px;
+	margin: 0px;
+	padding: 0px 10px 0px 10px;
+}
+.accordion-5:hover.light-theme-bg{
+	background-color: white;
+	border-bottom: 1px solid white;
+	cursor: pointer;
+	justify-content: space-between;
+	align-items: center;
+	text-align: left;
+	box-shadow: none;
+	border-top: 1.5px solid black;
+	border-left: 1.5px solid black;
+	border-right: 1.5px solid black;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 40px;
+	margin: 0px;
+	padding: 0px 10px 0px 10px;
+  }
+
+.accordion-5:hover.dark-theme-bg{
+	background-color: #191919;
+	border-bottom: 1px solid #191919;
+	cursor: pointer;
+	justify-content: space-between;
+	align-items: center;
+	text-align: left;
+	box-shadow: none;
+	border-top: 1.5px solid white;
+	border-left: 1.5px solid white;
+	border-right: 1.5px solid white;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 40px;
+	margin: 0px;
+	padding: 0px 10px 0px 10px;
+  }
+  .pannel-light-theme-bg{
+	padding: 0rem 0.5rem 1rem 0.5rem;
+	background-color: white!important;
+	overflow: hidden;
+	color: black!important;
+	display: none;
+	border-top: 0px solid black;
+	border-bottom: 1.5px solid black;
+	border-left: 1.5px solid black;
+	border-right: 1.5px solid black;
+  }  
+  .pannel-dark-theme-bg{
+	padding: 0rem 0.5rem 1rem 0.5rem;
+	background-color: #191919!important;
+	overflow: hidden;
+	color: white!important;
+	display: none;
+	border-top: 0px solid white;
+	border-bottom: 1.5px solid white;
+	border-left: 1.5px solid white;
+	border-right: 1.5px solid white;
+  } 
+  .pannel p.light-theme-bg{
+	color: black;
+	background-color: white;
+	font-size: 18px;
+	line-height: 1.4;
+  } 
+  .pannel p.dark-theme-bg{
+	color: white;
+	background-color: #191919;
+	font-size: 18px;
+	line-height: 1.4;
+  }  
+/*  #notify-form.light-theme-bg {
+	width: 100%;
+	margin-bottom: 2rem;
+	background-color: white !important;
+	padding: 20px;
+}
+#notify-form.dark-theme-bg {
+	width: 100%;
+	margin-bottom: 2rem;
+	background-color: #191919 !important;
+	padding: 20px;
+}*/
+.form.light-theme-bg{
+	background-color: white;
+	color: black;
+}
+.form.dark-theme-bg{
+	background-color: #191919!important;
+	color: white!important;
+}
+
 
 span {
 	color: #DB511F;
@@ -1222,10 +1998,10 @@ span.dark-theme-bg {
 @media screen and (max-width: 768px) {
 	#notify-form {
 		display: flex;
-		gap: 1rem;
+		gap: 0rem;
 	}
 	input {
-		width: 20rem;
+		width: 100%;
 		margin: 0;
 	}
 	button {
@@ -1267,6 +2043,18 @@ span.dark-theme-bg {
 		grid-column: 1;
 	}
 	header {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 5.33rem;
+		background-color: #191919;
+		color: #fff;
+		float: top;
+		padding-top: 20px;
+		padding-right: 20px;
+		padding-left: 20px;
+		padding-bottom: 20px;
+	}
+	footer {
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 5.33rem;
@@ -1692,6 +2480,21 @@ span.dark-theme-bg {
 		font-family: Caveat, sans-serif;
 		font-size: 20px;
 		box-shadow: 5px 5px #0080E3;
+	}
+	#lets-talk{
+		line-height: 1.5;
+		font-weight: 700;
+		font-family: Caveat, sans-serif;
+		font-size: 32px;
+		color: black;
+		text-decoration: underline;
+	}
+	#call
+	{
+		font-family: 'Inter', sans-serif;
+	    line-height: 1.5;
+	    color: black;
+		font-size: 24px !important;
 	}
 }
 /* ================================================= */

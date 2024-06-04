@@ -24,8 +24,22 @@ document.addEventListener("DOMContentLoaded", () => {
     const manufacturing = document.getElementById('manufacturing');
     const agriculture = document.getElementById('agriculture');
     const projects = document.getElementById('projects');
-    const accordion = document.querySelector('.accordion');
     const buttonHover = document.querySelector('button:hover')
+    const accordion = document.querySelector('.accordion');
+    const accordion1 = document.querySelector('.accordion-1');   
+    const accordion2 = document.querySelector('.accordion-2');
+    const accordion3 = document.querySelector('.accordion-3');
+    const accordion4 = document.querySelector('.accordion-4');
+    const accordion5 = document.querySelector('.accordion-5'); 
+    const accordionHover = document.querySelector('.accordion:hover')
+    const accordion1Hover = document.querySelector('.accordion-1:hover')
+    const accordion2Hover = document.querySelector('.accordion-2:hover')
+    const accordion3Hover = document.querySelector('.accordion-3:hover')
+    const accordion4Hover = document.querySelector('.accordion-4:hover')
+    const accordion5Hover = document.querySelector('.accordion-5:hover')
+    const pannel = document.querySelector('.pannel')
+    const pannelP = document.querySelector('.pannel p')
+    const form = document.querySelector('.form');
     
     
     
@@ -85,10 +99,38 @@ document.addEventListener("DOMContentLoaded", () => {
             agriculture.style.width = '100%';
             accordion.classList.remove('light-theme-bg');
             accordion.classList.add('dark-theme-bg');
+            accordion1.classList.remove('light-theme-bg');
+            accordion1.classList.add('dark-theme-bg');
+            accordion2.classList.remove('light-theme-bg');
+            accordion2.classList.add('dark-theme-bg');
+            accordion3.classList.remove('light-theme-bg');
+            accordion3.classList.add('dark-theme-bg');
+            accordion4.classList.remove('light-theme-bg');
+            accordion4.classList.add('dark-theme-bg');
+            accordion5.classList.remove('light-theme-bg');
+            accordion5.classList.add('dark-theme-bg');
             buttonHover.classList.remove('light-theme-bg');
             buttonHover.classList.add('dark-theme-bg');
             projects.classList.remove('light-theme-bg');
             projects.classList.add('dark-theme-bg');
+            accordionHover.classList.remove('light-theme-bg');
+            accordionHover.classList.add('dark-theme-bg');
+            accordion1Hover.classList.remove('light-theme-bg');
+            accordion1Hover.classList.add('dark-theme-bg');
+            accordion2Hover.classList.remove('light-theme-bg');
+            accordion2Hover.classList.add('dark-theme-bg');
+            accordion3Hover.classList.remove('light-theme-bg');
+            accordion3Hover.classList.add('dark-theme-bg');
+            accordion4Hover.classList.remove('light-theme-bg');
+            accordion4Hover.classList.add('dark-theme-bg');
+            accordion5Hover.classList.remove('light-theme-bg');
+            accordion5Hover.classList.add('dark-theme-bg');
+            pannel.classList.remove('light-theme-bg');
+            pannel.classList.add('dark-theme-bg');
+            pannelP.classList.remove('light-theme-bg');
+            pannelP.classList.add('dark-theme-bg');
+            form.classList.remove('light-theme-bg');
+            form.classList.add('dark-theme-bg');
         
 
 		} else {
@@ -144,16 +186,138 @@ document.addEventListener("DOMContentLoaded", () => {
             agriculture.style.width = '100%';
             accordion.classList.remove('dark-theme-bg');
             accordion.classList.add('light-theme-bg');
+            accordion1.classList.remove('dark-theme-bg');
+            accordion1.classList.add('light-theme-bg');
+            accordion2.classList.remove('dark-theme-bg');
+            accordion2.classList.add('light-theme-bg');
+            accordion3.classList.remove('dark-theme-bg');
+            accordion3.classList.add('light-theme-bg');
+            accordion4.classList.remove('dark-theme-bg');
+            accordion4.classList.add('light-theme-bg');
+            accordion5.classList.remove('dark-theme-bg');
+            accordion5.classList.add('light-theme-bg');
             buttonHover.classList.remove('dark-theme-bg');
             buttonHover.classList.add('light-theme-bg');
             projects.classList.remove('dark-theme-bg');
             projects.classList.add('light-theme-bg');
-           
+            accordionHover.classList.remove('dark-theme-bg');
+            accordionHover.classList.add('light-theme-bg');
+            accordion1Hover.classList.remove('dark-theme-bg');
+            accordion1Hover.classList.add('light-theme-bg');
+            accordion2Hover.classList.remove('dark-theme-bg');
+            accordion2Hover.classList.add('light-theme-bg');
+            accordion3Hover.classList.remove('dark-theme-bg');
+            accordion3Hover.classList.add('light-theme-bg');
+            accordion4Hover.classList.remove('dark-theme-bg');
+            accordion4Hover.classList.add('light-theme-bg');
+            accordion5Hover.classList.remove('dark-theme-bg');
+            accordion5Hover.classList.add('light-theme-bg');
+            pannel.classList.remove('dark-theme-bg');
+            pannel.classList.add('light-theme-bg');
+            pannelP.classList.remove('dark-theme-bg');
+            pannelP.classList.add('light-theme-bg');
+            form.classList.remove('dark-theme-bg');
+            form.classList.add('light-theme-bg');
 		}
 	});
 });
 
 var acc = document.getElementsByClassName("accordion");
+var i;
+
+for(i = 0; i < acc.length; i++){
+    acc[i].addEventListener("click", function
+    (){
+        this.classList.toggle("active");
+        this.parentElement.classList.toggle
+        ("active");
+
+        var pannel = this.nextElementSibling;
+
+        if(pannel.style.display === "block"){
+            pannel.style.display = "none";
+        }else{
+            pannel.style.display = "block";
+        }
+    })
+}
+var acc = document.getElementsByClassName("accordion-1");
+var i;
+
+for(i = 0; i < acc.length; i++){
+    acc[i].addEventListener("click", function
+    (){
+        this.classList.toggle("active");
+        this.parentElement.classList.toggle
+        ("active");
+
+        var pannel = this.nextElementSibling;
+
+        if(pannel.style.display === "block"){
+            pannel.style.display = "none";
+        }else{
+            pannel.style.display = "block";
+        }
+    })
+}
+var acc = document.getElementsByClassName("accordion-2");
+var i;
+
+for(i = 0; i < acc.length; i++){
+    acc[i].addEventListener("click", function
+    (){
+        this.classList.toggle("active");
+        this.parentElement.classList.toggle
+        ("active");
+
+        var pannel = this.nextElementSibling;
+
+        if(pannel.style.display === "block"){
+            pannel.style.display = "none";
+        }else{
+            pannel.style.display = "block";
+        }
+    })
+}
+var acc = document.getElementsByClassName("accordion-3");
+var i;
+
+for(i = 0; i < acc.length; i++){
+    acc[i].addEventListener("click", function
+    (){
+        this.classList.toggle("active");
+        this.parentElement.classList.toggle
+        ("active");
+
+        var pannel = this.nextElementSibling;
+
+        if(pannel.style.display === "block"){
+            pannel.style.display = "none";
+        }else{
+            pannel.style.display = "block";
+        }
+    })
+}
+var acc = document.getElementsByClassName("accordion-4");
+var i;
+
+for(i = 0; i < acc.length; i++){
+    acc[i].addEventListener("click", function
+    (){
+        this.classList.toggle("active");
+        this.parentElement.classList.toggle
+        ("active");
+
+        var pannel = this.nextElementSibling;
+
+        if(pannel.style.display === "block"){
+            pannel.style.display = "none";
+        }else{
+            pannel.style.display = "block";
+        }
+    })
+}
+var acc = document.getElementsByClassName("accordion-5");
 var i;
 
 for(i = 0; i < acc.length; i++){
