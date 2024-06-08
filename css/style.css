@@ -1091,6 +1091,7 @@ footer {
   font-family: Caveat, sans-serif;
   font-size: 36px;
   color: black;
+  padding: 20px;
 }
 .intro-content {
   display: flex;
@@ -2196,11 +2197,26 @@ input.dark-theme-bg {
 .dark-theme input::-ms-input-placeholder {
   color: rgba(153, 153, 153, 1); /* Microsoft Edge */
 }
+.row-element {
+display: none;
+}
 .input {
   outline: none !important;
   border: none !important;
 }
-
+.card-section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-inline: 10px;
+  padding-bottom: 20px;
+}
+.card-container{
+  min-width: 170px;
+}
 input:focus {
   outline: none;
   border-top: none;
