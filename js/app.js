@@ -45,12 +45,18 @@ document.addEventListener("DOMContentLoaded", () => {
   const pannelP = document.querySelectorAll(".pannel p");
   const form = document.querySelector(".form");
   const input = document.querySelectorAll("input");
+  const arrows = document.querySelectorAll(".arrow");
+  const copyRightEmail = document.querySelector(".footer-copy-right a");
 
   themeToggle.addEventListener("click", () => {
     document.body.classList.toggle("dark-theme");
     document.body.classList.toggle("light-theme");
     if (document.body.classList.contains("dark-theme")) {
+      arrows.forEach((item) => (item.src = "images/chevron-white.svg"));
       themeIcon.src = "images/moon.svg";
+
+      copyRightEmail.classList.remove("light-theme-bg");
+      copyRightEmail.classList.add("dark-theme-bg");
       clearfixH2.classList.remove("light-theme-bg");
       clearfixH2.classList.add("dark-theme-bg");
       clearfixH5.classList.remove("light-theme-bg");
@@ -142,6 +148,10 @@ document.addEventListener("DOMContentLoaded", () => {
       input.forEach((item) => item.classList.add("dark-theme-bg"));
     } else {
       themeIcon.src = "images/sun.svg";
+      copyRightEmail.classList.add("light-theme-bg");
+      copyRightEmail.classList.remove("dark-theme-bg");
+      arrows.forEach((item) => (item.src = "images/chevrons-left.svg"));
+
       clearfixH2.classList.remove("dark-theme-bg");
       clearfixH2.classList.add("light-theme-bg");
       clearfixH5.classList.remove("dark-theme-bg");
@@ -237,6 +247,34 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+var themeIcon = document.getElementById("theme-icon");
+themeIcon.addEventListener("mouseover", () => {
+  if (document.body.classList.contains("dark-theme")) {
+    themeIcon.src = "images/blue moon.svg";
+  } else {
+    themeIcon.src = "images/orange sun.svg";
+  }
+});
+themeIcon.addEventListener("mouseleave", () => {
+  if (document.body.classList.contains("dark-theme")) {
+    themeIcon.src = "images/moon.svg";
+  } else {
+    themeIcon.src = "images/sun.svg";
+  }
+});
+
+const userPortrait = document.querySelector("#user-portrait");
+userPortrait.addEventListener("mouseover", () => {
+  if (document.body.classList.contains("dark-theme")) {
+    userPortrait.src = "images/user-blue-portraite.svg";
+  } else {
+    userPortrait.src = "images/user-orange-portraite.svg";
+  }
+});
+userPortrait.addEventListener("mouseleave", () => {
+  userPortrait.src = "images/Satya-image.svg";
+});
+
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -244,6 +282,13 @@ for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function () {
     this.classList.toggle("active");
     this.parentElement.classList.toggle("active");
+    const p = this.querySelector("p");
+
+    if (this.classList.contains("active")) {
+      p.innerHTML = "x";
+    } else {
+      p.innerHTML = "+";
+    }
 
     var pannel = this.nextElementSibling;
 
@@ -254,88 +299,27 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
-var acc = document.getElementsByClassName("accordion-1");
-var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    this.parentElement.classList.toggle("active");
+const words = [
+  "Technology",
+  "Business",
+  "Design",
+  "Supply Chain",
+  "Product",
+  "Climate",
+  "E-commerce",
+  "Analytics",
+  "Agriculture",
+  "Venture Capital",
+];
 
-    var pannel = this.nextElementSibling;
+let index = 0;
 
-    if (pannel.style.display === "block") {
-      pannel.style.display = "none";
-    } else {
-      pannel.style.display = "block";
-    }
-  });
+function displayWord() {
+  const servicesElement = document.getElementById("services");
+  servicesElement.textContent = words[index];
+  index = (index + 1) % words.length; // Cycle through the words array
 }
-var acc = document.getElementsByClassName("accordion-2");
-var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    this.parentElement.classList.toggle("active");
-
-    var pannel = this.nextElementSibling;
-
-    if (pannel.style.display === "block") {
-      pannel.style.display = "none";
-    } else {
-      pannel.style.display = "block";
-    }
-  });
-}
-var acc = document.getElementsByClassName("accordion-3");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    this.parentElement.classList.toggle("active");
-
-    var pannel = this.nextElementSibling;
-
-    if (pannel.style.display === "block") {
-      pannel.style.display = "none";
-    } else {
-      pannel.style.display = "block";
-    }
-  });
-}
-var acc = document.getElementsByClassName("accordion-4");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    this.parentElement.classList.toggle("active");
-
-    var pannel = this.nextElementSibling;
-
-    if (pannel.style.display === "block") {
-      pannel.style.display = "none";
-    } else {
-      pannel.style.display = "block";
-    }
-  });
-}
-var acc = document.getElementsByClassName("accordion-5");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    this.parentElement.classList.toggle("active");
-
-    var pannel = this.nextElementSibling;
-
-    if (pannel.style.display === "block") {
-      pannel.style.display = "none";
-    } else {
-      pannel.style.display = "block";
-    }
-  });
-}
+// Call displayWord every 2 second
+setInterval(displayWord, 2000);
