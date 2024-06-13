@@ -4273,6 +4273,7 @@ span.dark-theme-bg {
     align-items: flex-start;
     padding-top: 5rem;
     margin-bottom: -4rem;
+    padding-inline: 15px;
 
     > div:first-child {
       height: max-content !important;
