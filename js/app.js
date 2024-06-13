@@ -61,30 +61,12 @@ document.addEventListener("DOMContentLoaded", () => {
       clearfixH2.classList.add("dark-theme-bg");
       clearfixH5.classList.remove("light-theme-bg");
       clearfixH5.classList.add("dark-theme-bg");
-      bannerText.classList.remove("light-theme-bg");
-      bannerText.classList.add("dark-theme-bg");
-      bannerText1.classList.remove("light-theme-bg");
-      bannerText1.classList.add("dark-theme-bg");
-      bannerText2.classList.remove("light-theme-bg");
-      bannerText2.classList.add("dark-theme-bg");
       highlight.classList.remove("light-theme-text");
       highlight.classList.add("dark-theme-text");
-      highlight1.classList.remove("light-theme-text");
-      highlight1.classList.add("dark-theme-text");
-      highlight2.classList.remove("light-theme-text");
-      highlight2.classList.add("dark-theme-text");
-      highlight3.classList.remove("light-theme-text");
-      highlight3.classList.add("dark-theme-text");
-      highlight4.classList.remove("light-theme-text");
-      highlight4.classList.add("dark-theme-text");
-      highlight5.classList.remove("light-theme-text");
-      highlight5.classList.add("dark-theme-text");
       clearfixH1.classList.remove("light-theme-bg");
       clearfixH1.classList.add("dark-theme-bg");
       clearfixH3.classList.remove("light-theme-bg");
       clearfixH3.classList.add("dark-theme-bg");
-      clearfixH4.classList.remove("light-theme-bg");
-      clearfixH4.classList.add("dark-theme-bg");
       goals.classList.remove("light-theme-bg");
       goals.classList.add("dark-theme-bg");
       adapt.classList.remove("light-theme-bg");
@@ -93,18 +75,8 @@ document.addEventListener("DOMContentLoaded", () => {
       team.classList.add("dark-theme-bg");
       clearfixP.classList.remove("light-theme-bg");
       clearfixP.classList.add("dark-theme-bg");
-      technology1.classList.remove("light-theme-bg");
-      technology1.classList.add("dark-theme-bg");
       button.classList.remove("light-theme-bg");
       button.classList.add("dark-theme-bg");
-      industries.classList.remove("light-theme-bg");
-      industries.classList.add("dark-theme-bg");
-      retail.classList.remove("light-theme-bg");
-      retail.classList.add("dark-theme-bg");
-      manufacturing.classList.remove("light-theme-bg");
-      manufacturing.classList.add("dark-theme-bg");
-      agriculture.classList.remove("light-theme-bg");
-      agriculture.classList.add("dark-theme-bg");
       accordion.forEach((item) => item.classList.remove("light-theme-bg"));
       accordion.forEach((item) => item.classList.add("dark-theme-bg"));
       // accordion1.classList.remove("light-theme-bg");
@@ -123,8 +95,6 @@ document.addEventListener("DOMContentLoaded", () => {
       send.classList.add("dark-theme-bg");
       sendHover?.classList?.remove("light-theme-bg");
       sendHover?.classList?.add("dark-theme-bg");
-      projects.classList.remove("light-theme-bg");
-      projects.classList.add("dark-theme-bg");
 
       accordionHover?.classList?.remove("light-theme-bg");
       accordionHover?.classList?.add("dark-theme-bg");
@@ -157,30 +127,12 @@ document.addEventListener("DOMContentLoaded", () => {
       clearfixH5.classList.remove("dark-theme-bg");
       clearfixH5.classList.add("light-theme-bg");
 
-      bannerText.classList.remove("dark-theme-bg");
-      bannerText.classList.add("light-theme-bg");
-      bannerText1.classList.remove("dark-theme-bg");
-      bannerText1.classList.add("light-theme-bg");
-      bannerText2.classList.remove("dark-theme-bg");
-      bannerText2.classList.add("light-theme-bg");
       highlight.classList.remove("dark-theme-text");
       highlight.classList.add("light-theme-text");
-      highlight1.classList.remove("dark-theme-text");
-      highlight1.classList.add("light-theme-text");
-      highlight2.classList.remove("dark-theme-text");
-      highlight2.classList.add("light-theme-text");
-      highlight3.classList.remove("dark-theme-text");
-      highlight3.classList.add("light-theme-text");
-      highlight4.classList.remove("dark-theme-text");
-      highlight4.classList.add("light-theme-text");
-      highlight5.classList.remove("dark-theme-text");
-      highlight5.classList.add("light-theme-text");
       clearfixH1.classList.remove("dark-theme-bg");
       clearfixH1.classList.add("light-theme-bg");
       clearfixH3.classList.remove("dark-theme-bg");
       clearfixH3.classList.add("light-theme-bg");
-      clearfixH4.classList.remove("dark-theme-bg");
-      clearfixH4.classList.add("light-theme-bg");
       goals.classList.remove("dark-theme-bg");
       goals.classList.add("light-theme-bg");
       adapt.classList.remove("dark-theme-bg");
@@ -191,16 +143,6 @@ document.addEventListener("DOMContentLoaded", () => {
       clearfixP.classList.add("light-theme-bg");
       button.classList.remove("dark-theme-bg");
       button.classList.add("light-theme-bg");
-      industries.classList.remove("dark-theme-bg");
-      industries.classList.add("light-theme-bg");
-      technology1.classList.remove("dark-theme-bg");
-      technology1.classList.add("light-theme-bg");
-      retail.classList.remove("dark-theme-bg");
-      retail.classList.add("light-theme-bg");
-      manufacturing.classList.remove("dark-theme-bg");
-      manufacturing.classList.add("light-theme-bg");
-      agriculture.classList.remove("dark-theme-bg");
-      agriculture.classList.add("light-theme-bg");
       accordion.forEach((item) => item.classList.remove("dark-theme-bg"));
       accordion.forEach((item) => item.classList.add("light-theme-bg"));
       // accordion1.classList.remove("dark-theme-bg");
@@ -219,8 +161,6 @@ document.addEventListener("DOMContentLoaded", () => {
       send.classList.add("light-theme-bg");
       sendHover?.classList?.remove("dark-theme-bg");
       sendHover?.classList?.add("light-theme-bg");
-      projects.classList.remove("dark-theme-bg");
-      projects.classList.add("light-theme-bg");
       accordionHover.forEach((item) =>
         item?.classList?.remove("dark-theme-bg"),
       );
@@ -275,22 +215,43 @@ userPortrait.addEventListener("mouseleave", () => {
   userPortrait.src = "images/Satya-image.svg";
 });
 
-var acc = document.getElementsByClassName("accordion");
+var acc = document.getElementsByClassName("faq");
 var i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    this.parentElement.classList.toggle("active");
-    const p = this.querySelector("p");
+    // Remove active class from all other faq elements and their children
+    for (var j = 0; j < acc.length; j++) {
+      if (acc[j] !== this) {
+        acc[j].classList.remove("active");
+        const otherAccordion = acc[j].querySelector(".accordion");
+        if (otherAccordion) {
+          otherAccordion.classList.remove("active");
+          const otherP = otherAccordion.querySelector("p");
+          if (otherP) {
+            otherP.innerHTML = "+";
+          }
+          const otherPannel = otherAccordion.nextElementSibling;
+          if (otherPannel) {
+            otherPannel.style.display = "none";
+          }
+        }
+      }
+    }
 
-    if (this.classList.contains("active")) {
+    // Toggle active class on the clicked element and its child elements
+    const accordion = this.querySelector(".accordion");
+    this.classList.toggle("active");
+    accordion.classList.toggle("active");
+    const p = accordion.querySelector("p");
+
+    if (accordion.classList.contains("active")) {
       p.innerHTML = "x";
     } else {
       p.innerHTML = "+";
     }
 
-    var pannel = this.nextElementSibling;
+    var pannel = accordion.nextElementSibling;
 
     if (pannel.style.display === "block") {
       pannel.style.display = "none";
@@ -300,26 +261,46 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-const words = [
-  "Technology",
-  "Business",
-  "Design",
-  "Supply Chain",
-  "Product",
-  "Climate",
-  "E-commerce",
-  "Analytics",
-  "Agriculture",
-  "Venture Capital",
-];
+// const words = [
+//   "Technology",
+//   "Business",
+//   "Design",
+//   "Supply Chain",
+//   "Product",
+//   "Climate",
+//   "E-commerce",
+//   "Analytics",
+//   "Agriculture",
+//   "Venture Capital",
+// ];
 
-let index = 0;
+// let index = 0;
 
-function displayWord() {
-  const servicesElement = document.getElementById("services");
-  servicesElement.textContent = words[index];
-  index = (index + 1) % words.length; // Cycle through the words array
-}
+// function displayWord() {
+//   const servicesElement = document.getElementById("services");
+//   servicesElement.textContent = words[index];
+//   index = (index + 1) % words.length; // Cycle through the words array
+// }
 
-// Call displayWord every 2 second
-setInterval(displayWord, 2000);
+// // Call displayWord every 2 second
+// setInterval(displayWord, 2000);
+
+const servicesElement = document.getElementById("services");
+var typewritter1 = new TsTypeWritter(servicesElement, 200, 100, true);
+typewritter1
+  .write(" Technology Development")
+  .pause(500)
+  .deleteAll()
+  .write(" Business Design")
+  .pause(500)
+  .deleteAll()
+  .write(" Go-to-Market Strategy")
+  .pause(500)
+  .deleteAll()
+  .write(" Venture Funding")
+  .pause(500)
+  .deleteAll()
+  .write(" Operations Management")
+  .pause(500)
+  .deleteAll()
+  .start();
