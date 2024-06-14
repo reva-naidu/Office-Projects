@@ -28,6 +28,16 @@
 /* General styles */
 
 /* ================================================= */
+.light-theme .typing {
+  width: max-content;
+  transition: all linear 250ms;
+  border-right: 0.05em solid #db511f;
+}
+.dark-theme .typing {
+  width: max-content;
+  transition: all linear 250ms;
+  border-right: 0.05em solid #0080e3;
+}
 
 html {
   font-size: 112.5%;
@@ -105,6 +115,20 @@ img {
   padding-bottom: 6rem;
   padding-left: 80px;
   padding-right: 80px;
+}
+.clearfix:nth-child(3) {
+  margin-top: 1rem;
+  margin-bottom: 7rem;
+}
+.light-theme .clearfix:nth-child(3) {
+  background-color: #ffffff;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+.dark-theme .clearfix:nth-child(3) {
+  background-color: #010101;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
 }
 .clearfix:nth-child(3) {
   padding-bottom: 5rem;
@@ -2986,6 +3010,11 @@ span.dark-theme-bg {
   }
 }
 @media screen and (max-width: 767px) {
+  .clearfix:nth-child(3) {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+
   .row.row#how-i-work {
     .column {
       margin-bottom: 0px;
@@ -3742,6 +3771,11 @@ span.dark-theme-bg {
 }
 
 @media screen and (min-width: 768px) and (max-width: 820px) {
+  .clearfix:nth-child(3) {
+    margin-top: 0rem;
+    margin-bottom: 4.5rem !important;
+  }
+
   .hero-layout {
     display: flex;
     flex-direction: column-reverse;
@@ -3847,6 +3881,18 @@ span.dark-theme-bg {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clearfix:nth-child(3) {
+    margin-top: 0rem;
+    margin-bottom: 6rem;
+  }
+  .light-theme .clearfix:nth-child(3) {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+  .dark-theme .clearfix:nth-child(3) {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
   .row.row#how-i-work {
     .column {
       margin-bottom: 0px;

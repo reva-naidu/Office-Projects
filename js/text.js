@@ -149,6 +149,9 @@ var TsTypeWritter = /** @class */ (function () {
     this.loop = false;
     this.TSTElement = document.createElement("span");
     element.appendChild(this.TSTElement);
+    requestAnimationFrame(() => {
+      this.TSTElement.classList.add("typing");
+    });
     this.TSTwrittingSpeed = writtingSpeed;
     this.TSTdeletingSpeed = deletingSpeed;
     this.loop = loop;
@@ -185,18 +188,35 @@ var TsTypeWritter = /** @class */ (function () {
     });
   };
   TsTypeWritter.prototype.write = function (sentence) {
-    var _this = this;
-    this.push(function () {
-      return new Promise(function (resolve, reject) {
-        var count = 0;
-        var writeId = setInterval(function () {
-          _this.TSTElement.innerHTML += sentence[count];
+    this.push(() => {
+      return new Promise((resolve, reject) => {
+        let count = 0;
+        const writeId = setInterval(() => {
+          this.TSTElement.textContent += sentence[count];
           count++;
-          if (sentence.length == count) {
+          if (count === sentence.length) {
             clearInterval(writeId);
             resolve();
           }
-        }, _this.TSTwrittingSpeed);
+        }, this.TSTwrittingSpeed);
+      });
+    });
+    return this;
+  };
+
+  TsTypeWritter.prototype.delete = function (positions) {
+    this.push(() => {
+      return new Promise((resolve, reject) => {
+        let count = 0;
+        const deleteId = setInterval(() => {
+          const text = this.TSTElement.textContent;
+          this.TSTElement.textContent = text.substring(0, text.length - 1);
+          count++;
+          if (count === positions) {
+            clearInterval(deleteId);
+            resolve();
+          }
+        }, this.TSTdeletingSpeed);
       });
     });
     return this;
@@ -208,27 +228,6 @@ var TsTypeWritter = /** @class */ (function () {
           clearTimeout(pauseId);
           resolve();
         }, duration);
-      });
-    });
-    return this;
-  };
-  TsTypeWritter.prototype.delete = function (positions) {
-    var _this = this;
-    this.push(function () {
-      return new Promise(function (resolve, reject) {
-        var count = 0;
-        var deleteId = setInterval(function () {
-          var existingText = _this.TSTElement.innerText;
-          _this.TSTElement.innerText = existingText.substring(
-            0,
-            existingText.length - 1,
-          );
-          count++;
-          if (positions == count) {
-            clearInterval(deleteId);
-            resolve();
-          }
-        }, _this.TSTdeletingSpeed);
       });
     });
     return this;

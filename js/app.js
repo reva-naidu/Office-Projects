@@ -286,7 +286,7 @@ for (i = 0; i < acc.length; i++) {
 // setInterval(displayWord, 2000);
 
 const servicesElement = document.getElementById("services");
-var typewritter1 = new TsTypeWritter(servicesElement, 200, 100, true);
+var typewritter1 = new TsTypeWritter(servicesElement, 70, 100, true);
 typewritter1
   .write(" Technology Development")
   .pause(500)
