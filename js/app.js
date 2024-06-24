@@ -286,21 +286,21 @@ for (i = 0; i < acc.length; i++) {
 // setInterval(displayWord, 2000);
 
 const servicesElement = document.getElementById("services");
-var typewritter1 = new TsTypeWritter(servicesElement, 70, 100, true);
+var typewritter1 = new TsTypeWritter(servicesElement, 70, 120, true);
 typewritter1
   .write(" Technology Development")
-  .pause(500)
+  .pause(1200)
   .deleteAll()
   .write(" Business Design")
-  .pause(500)
+  .pause(1200)
   .deleteAll()
   .write(" Go-to-Market Strategy")
-  .pause(500)
+  .pause(1200)
   .deleteAll()
   .write(" Venture Funding")
-  .pause(500)
+  .pause(1200)
   .deleteAll()
   .write(" Operations Management")
-  .pause(500)
+  .pause(1200)
   .deleteAll()
   .start();
