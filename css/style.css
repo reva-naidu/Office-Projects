@@ -2327,6 +2327,7 @@ span.dark-theme-bg {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    justify-content: space-between;
     padding-top: 5rem;
     margin-bottom: -4rem;
     padding-inline: 15px;
@@ -2470,6 +2471,7 @@ span.dark-theme-bg {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     margin-top: 2rem;
     padding-top: 2rem;
     padding-inline: 10px;
